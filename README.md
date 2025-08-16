@@ -6,6 +6,10 @@ You answer a few questions and get a list of recommended shows.
 
 Yes, the styling is over the top. 
 
+The site is hosted with Github Pages. 
+
+https://jccroft1.github.io/framefinder/
+
 ## Development 
 
 Run the tailwindcss compilation. 
