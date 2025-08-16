@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Show Quiz</title>
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body
+    class="bg-gradient-to-br from-purple-800 via-pink-600 to-yellow-400 min-h-screen flex flex-col items-center justify-center text-white font-bold"
+    style="background-size: 300% 300%; animation: gradientMove 8s ease infinite;">
+
+    <h1 class="fixed top-0 w-full text-center text-4xl py-6  text-white shadow-md">
+        Animation Show Finder
+    </h1>
+
+    <!-- Q1 -->
+    <div class="page active fade items-center gap-6 text-center animate-slideFade" id="q1">
+        <h1 class="text-7xl animate-pulse">Theme?</h1>
+        <div class="flex gap-4 justify-center">
+            <button class="text-2xl bg-blue-500 hover:bg-blue-700 py-3 px-6 rounded" onclick="nextPage('Sci-fi')">🚀
+                Sci-fi</button>
+            <button class="text-2xl bg-green-500 hover:bg-green-700 py-3 px-6 rounded" onclick="nextPage('Fantasy')">🧙
+                Fantasy</button>
+        </div>
+    </div>
+    <!-- Q2 -->
+    <div class="page fade items-center gap-6 text-center animate-slideFade" id="q2">
+        <h1 class="text-7xl animate-pulse">Culture?</h1>
+        <div class="flex gap-4 justify-center">
+            <button class="text-2xl bg-red-500 hover:bg-red-700 py-3 px-6 rounded" onclick="nextPage('Western')">🤠
+                Western</button>
+            <button class="text-2xl bg-yellow-500 hover:bg-yellow-700 py-3 px-6 rounded"
+                onclick="nextPage('Eastern')">🈴
+                Eastern</button>
+        </div>
+
+    </div>
+    <!-- Q3 -->
+    <div class="page fade items-center gap-6 text-center animate-slideFade" id="q3">
+        <h1 class="text-7xl animate-pulse">Age?</h1>
+        <div class="flex gap-4 justify-center">
+            <button class="text-2xl bg-red-500 hover:bg-red-700 py-3 px-6 rounded" onclick="nextPage('Kid')">👶
+                Kid</button>
+            <button class="text-2xl bg-yellow-500 hover:bg-yellow-700 py-3 px-6 rounded" onclick="nextPage('Adult')">🧑
+                Adult</button>
+        </div>
+
+    </div>
+    <!-- Q4 -->
+    <div class="page fade items-center gap-6 text-center animate-slideFade" id="q4">
+        <h1 class="text-7xl animate-pulse"> Genre?</h1>
+        <div class="flex gap-4 justify-center">
+            <button class="text-2xl bg-purple-500 hover:bg-purple-700 py-3 px-6 rounded"
+                onclick="showResults('Comedy')">😂
+                Comedy</button>
+            <button class="text-2xl bg-orange-500 hover:bg-orange-700 py-3 px-6 rounded"
+                onclick="showResults('Action')">💥
+                Action</button>
+        </div>
+    </div>
+
+    <!-- Results -->
+    <div class="page fade flex-col items-center gap-6 text-center animate-slideFade" id="results">
+        <h1 class="text-5xl animate-pulse">📺 Your Recommended Shows...</h1>
+        <ul id="showList" class="text-4xl space-y-2"></ul>
+        <button class="bg-black text-white text-2xl py-2 px-4 rounded hover:bg-gray-300" onclick="restart()">🔄
+            Restart</button>
+    </div>
+
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
