@@ -31,7 +31,7 @@ function showResults(answer) {
 }
 
 function displayShows() {
-    const scifi = "Sci-fi", fantasy = "Fantasy";
+    const scifi = "Sci-fi", fantasy = "Fantasy", modern = "Modern";
     const western = "Western", eastern = "Eastern";
     const comedy = "Comedy", action = "Action";
     const kid = "Kid", adult = "Adult";
@@ -133,7 +133,7 @@ function displayShows() {
         },
         {
             "name": "🍔 Bob's Burgers",
-            "theme": fantasy,
+            "theme": modern,
             "culture": western,
             "genre": comedy,
             "age": kid
@@ -147,7 +147,7 @@ function displayShows() {
         },
         {
             "name": "🕵️ Archer",
-            "theme": scifi,
+            "theme": modern,
             "culture": western,
             "genre": comedy,
             "age": adult
@@ -161,7 +161,7 @@ function displayShows() {
         },
         {
             "name": "👒 Carmen Sandiego",
-            "theme": scifi,
+            "theme": modern,
             "culture": western,
             "genre": action,
             "age": kid

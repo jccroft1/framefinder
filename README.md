@@ -24,4 +24,4 @@ Open index.html.
 
 * Links to TheMovieDB or IMDB. 
 * Ensure all answers have at least one show. 
-* Show answers at the end 
+* Show user's answers at the end. 

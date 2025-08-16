@@ -20,11 +20,13 @@
     <!-- Q1 -->
     <div class="page active fade items-center gap-6 text-center animate-slideFade" id="q1">
         <h1 class="text-7xl animate-pulse">Theme?</h1>
-        <div class="flex gap-4 justify-center">
+        <div class="flex gap-4 flex-col md:flex-row justify-center">
             <button class="text-2xl bg-blue-500 hover:bg-blue-700 py-3 px-6 rounded" onclick="nextPage('Sci-fi')">🚀
                 Sci-fi</button>
             <button class="text-2xl bg-green-500 hover:bg-green-700 py-3 px-6 rounded" onclick="nextPage('Fantasy')">🧙
                 Fantasy</button>
+            <button class="text-2xl bg-gray-500 hover:bg-gray-700 py-3 px-6 rounded" onclick="nextPage('Modern')">🏢
+                Modern</button>
         </div>
     </div>
     <!-- Q2 -->
@@ -65,7 +67,7 @@
 
     <!-- Results -->
     <div class="page fade flex-col items-center gap-6 text-center animate-slideFade" id="results">
-        <h1 class="text-5xl animate-pulse">📺 Your Recommended Shows...</h1>
+        <h1 class="text-2xl md:text-5xl animate-pulse">📺 Your Recommended Shows...</h1>
         <ul id="showList" class="text-4xl space-y-2"></ul>
         <button class="bg-black text-white text-2xl py-2 px-4 rounded hover:bg-gray-300" onclick="restart()">🔄
             Restart</button>
